@@ -13,7 +13,7 @@
     display: grid;
     grid-template-rows: 73px 41px;
     grid-template-columns: repeat(2, 1fr) ;
-    grid-gap: px;
+    grid-gap: 0px;
 
     grid-template-areas: 
     "G_top_left  G_top_right"
@@ -65,4 +65,52 @@
     grid-area:G_lw;
     /*background-color: rgba(0,0,0,0.92);*/
 
+}
+
+
+
+#header_selection {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    margin-top: 180px;
+    align-items: start;
+    box-shadow: 0px 0px 10px;
+    border-radius: 20px;
+
+}
+
+.selection_list {
+
+    margin: 0px;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-template-areas: 
+    "Gone"
+    "Gtwo"
+    "Gthree"
+    ;
+
+}
+
+.selection_item {
+    
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+#grid_one {
+    grid-area: Gone;
+}
+
+#grid_two {
+    grid-area: Gtwo;
+}
+
+#grid_three {
+    grid-area: Gthree;
 }
